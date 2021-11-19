@@ -1,8 +1,8 @@
 <script>
     import {user} from "$lib/session-store"
     import {supabase} from "$lib/supabase-client"
-    import Auth from "./Auth.svelte"
-    import Profile from "./Profile.svelte"
+    import Auth from "./auth.svelte"
+    import Profile from "./profile.svelte"
 
     user.set(supabase.auth.user())
 
